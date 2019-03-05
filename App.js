@@ -8,7 +8,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image} from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -25,6 +25,19 @@ export default class App extends Component<Props> {
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
+        <Image
+          style={{width: 50, height: 50}}
+          source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
+        />
+        <View style={{
+          flex: 1, flewDirection: "column"
+        }}>
+          <View style={{
+            flewDirection: "row",
+            justifyContent: "space-between"
+          }}>
+          </View>
+        </View>
       </View>
     );
   }
