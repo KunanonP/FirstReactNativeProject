@@ -17,27 +17,22 @@ const instructions = Platform.select({
     'This is my first React Native project',
 });
 
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
+// type Props = {};
+export default class App extends Component {
+  // render for represent ui app
+  render () {
+    // JSX
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-        <Image
-          style={{width: 50, height: 50}}
-          source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
-        />
-        <View style={{
-          flex: 1, flewDirection: "column"
-        }}>
-          <View style={{
-            flewDirection: "row",
-            justifyContent: "space-between"
-          }}>
-          </View>
-        </View>
+      // Container
+      <View style={{flex: 1, flexDirection: 'column',
+                    backgroundColor: '#F5FCFF',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+        <Text style={{textAlign: 'center', color: '#FF0000'}}>
+          My Mobile App 
+          First app
+        </Text>
       </View>
     );
   }

@@ -4,9 +4,9 @@
  */
 
 import {AppRegistry, Text} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
-import Header from './src/component/Header';
+// import App from './App';
+// import {name as appName} from './app.json';
+import FirstCompoment from './src/component/comp1';
 import React from 'react';
 
 // init component
@@ -15,4 +15,4 @@ import React from 'react';
 // );
 
 // Render on device
-AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent('firstReactNative', () => FirstCompoment);
